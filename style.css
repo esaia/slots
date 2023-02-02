@@ -28,6 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+  overflow: hidden;
 }
 
 .item > img {
@@ -36,6 +37,17 @@ body {
   width: 90%;
   height: 90%;
   object-fit: cover;
+  animation: itemanim 200ms linear;
+}
+
+@keyframes itemanim {
+  0% {
+    transform: translateY(-120px);
+  }
+
+  100% {
+    transform: translateY(150px);
+  }
 }
 
 .spinBtn {

@@ -23,7 +23,7 @@ spinBtn.addEventListener("click", () => {
 
   setTimeout(() => {
     for (let i = 0; i < 15; i++) {
-      itemdiv[i].style.background = "none";
+      // itemdiv[i].style.background = "none";
 
       let myRandomIndex = getRandomInt(0, 2);
       itemdiv[i].innerHTML = "<img src=' " + images[myRandomIndex] + "'/>";
@@ -37,7 +37,7 @@ spinBtn.addEventListener("click", () => {
       let myRandomIndex = getRandomInt(0, 2);
       itemdiv[i].innerHTML = "<img src=' " + images[myRandomIndex] + "'/>";
     }
-  }, 300);
+  }, 400);
 
   setTimeout(() => {
     for (let i = 0; i < 15; i++) {
@@ -46,21 +46,14 @@ spinBtn.addEventListener("click", () => {
       let myRandomIndex = getRandomInt(0, 2);
       itemdiv[i].innerHTML = "<img src=' " + images[myRandomIndex] + "'/>";
     }
-  }, 400);
-
-  setTimeout(() => {
-    for (let i = 0; i < 15; i++) {
-      let myRandomIndex = getRandomInt(0, 3);
-      itemdiv[i].innerHTML = "<img src=' " + images[myRandomIndex] + "'/>";
-    }
-  }, 500);
-
-  setTimeout(() => {
-    for (let i = 0; i < 15; i++) {
-      let myRandomIndex = getRandomInt(0, 3);
-      itemdiv[i].innerHTML = "<img src=' " + images[myRandomIndex] + "'/>";
-    }
   }, 600);
+
+  setTimeout(() => {
+    for (let i = 0; i < 15; i++) {
+      let myRandomIndex = getRandomInt(0, 3);
+      itemdiv[i].innerHTML = "<img src=' " + images[myRandomIndex] + "'/>";
+    }
+  }, 800);
 
   //   testing
 
@@ -77,16 +70,16 @@ spinBtn.addEventListener("click", () => {
           }, 0);
           setTimeout(() => {
             itemdiv[i + 1].style.background = "lightgreen";
-          }, 50);
+          }, 100);
           setTimeout(() => {
             itemdiv[i + 2].style.background = "lightgreen";
-          }, 100);
+          }, 200);
 
           // break;
         }
       }
     }
-  }, 800);
+  }, 1200);
 
   setTimeout(() => {
     for (let i = 0; i < 5; i++) {
@@ -99,15 +92,15 @@ spinBtn.addEventListener("click", () => {
         }, 0);
         setTimeout(() => {
           itemdiv[i + 5].style.background = "lightblue";
-        }, 50);
+        }, 100);
         setTimeout(() => {
           itemdiv[i + 10].style.background = "lightblue";
-        }, 100);
+        }, 200);
 
         // break;
       }
     }
-  }, 1000);
+  }, 1200);
 
   setTimeout(() => {
     for (let i = 0; i < 5; i++) {
@@ -120,17 +113,17 @@ spinBtn.addEventListener("click", () => {
         }, 0);
         setTimeout(() => {
           itemdiv[i + 6].style.background = "black";
-        }, 50);
+        }, 100);
         setTimeout(() => {
           itemdiv[i + 12].style.background = "black";
-        }, 100);
+        }, 200);
 
         // break;
       }
     }
 
     spinBtn.style.display = "block";
-  }, 1100);
+  }, 1200);
 });
 
 // console.log(itemdiv[0].innerHTML);
