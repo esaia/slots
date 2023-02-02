@@ -1,0 +1,55 @@
+body {
+  font-family: sans-serif;
+  background-color: aqua;
+}
+
+.slotsDiv {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  /* max-width: 500px; */
+  margin: auto;
+}
+
+.item {
+  justify-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.item > img {
+  /* mix-blend-mode: multiply; */
+
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.spinBtn {
+  display: block;
+  padding: 20px 30px;
+  margin-top: 30px;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(5, 3, 20);
+  border-radius: 4px;
+}
+
+.spinBtn:hover {
+  background-color: rgb(37, 36, 62);
+}
